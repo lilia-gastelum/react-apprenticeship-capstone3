@@ -1,0 +1,91 @@
+.red {
+  background-color: #f18b82;
+}
+.orange {
+  background-color: #fbbd05;
+}
+.yellow {
+  background-color: #fef476;
+}
+.green {
+  background-color: #cbff90;
+}
+.teal {
+  background-color: #a8ffeb;
+}
+.blue {
+  background-color: #cbf0f8;
+}
+.darkblue {
+  background-color: #afcbfa;
+}
+.purple {
+  background-color: #d7aefb;
+}
+.pink {
+  background-color: #fdcfe8;
+}
+.brown {
+  background-color: #e5c9a8;
+}
+.gray {
+  background-color: #e8eaed;
+}
+
+.note {
+  width: 15%;
+  float: left;
+  margin: 0.5%;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: solid 1px lightgray;
+}
+
+.note:hover {
+  box-shadow: 1px 1px 4px #888888;
+}
+
+.buttons {
+  text-align: right;
+  margin-right: 5px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  visibility: hidden;
+  padding: 3px;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.note:hover > .buttons > .tooltip > .icon {
+  visibility: visible !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 0.7rem;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

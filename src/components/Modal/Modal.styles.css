@@ -1,0 +1,58 @@
+.modal-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .red {
+    background-color: #f18b82;
+  }
+  .orange {
+    background-color: #fbbd05;
+  }
+  .yellow {
+    background-color: #fef476;
+  }
+  .green {
+    background-color: #cbff90;
+  }
+  .teal {
+    background-color: #a8ffeb;
+  }
+  .blue {
+    background-color: #cbf0f8;
+  }
+  .darkblue {
+    background-color: #afcbfa;
+  }
+  .purple {
+    background-color: #d7aefb;
+  }
+  .pink {
+    background-color: #fdcfe8;
+  }
+  .brown {
+    background-color: #e5c9a8;
+  }
+  .gray {
+    background-color: #e8eaed;
+  }
+
+
+  .modal-window>div{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 10px;
+  }
+  
+  

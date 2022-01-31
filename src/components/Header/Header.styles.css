@@ -1,0 +1,98 @@
+.header {
+  position: relative;
+  background-color: "white";
+  height: 60px;
+  z-index: 999;
+  border: 1px solid lightgray;
+}
+
+.menu {
+  float: left;
+  padding: 10px;
+  height: 20px;
+  margin: 0.5%;
+  cursor: pointer;
+}
+
+.location {
+  float: left;
+  font-size: 20px;
+  margin-top: 1%;
+  width: 10%;
+  text-align: left;
+}
+
+.search {
+  background-color: #f1f3f4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  float: left;
+  margin: 0.5%;
+  height: 25px;
+  border: 0px;
+  padding: 0.5%;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.search:focus {
+  outline: 0;
+  background-color: transparent;
+  border: 0.5 solid lightgray;
+  box-shadow: 1px 1px 4px #888888;
+}
+
+.settings {
+  float: right;
+  padding: 10px;
+  height: 20px;
+  margin: 0.5%;
+  cursor: pointer;
+}
+
+.settings:hover,
+.menu:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.avatar {
+  float: right;
+  margin: 0.8%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.user-widget {
+  width: 10%;
+  left: 0px;
+  margin: 65px 0.2% 0px 89%;
+  background-color: white;
+  padding: 5px;
+  position: absolute;
+  right: 50px;
+  border-radius: 5px;
+  border: 0.5px solid lightgray;
+}
+
+.avatar-widget{
+  height: 60px;
+}
+
+.name{
+  font-size: 1rem;
+}
+
+.email{
+  font-size: 0.8rem;
+}
+
+.sign-out{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0.5px solid lightgray;
+  height: 30px;
+  width: 100%;
+  cursor: pointer;
+}
