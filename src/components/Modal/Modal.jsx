@@ -35,6 +35,7 @@ function Modal(props) {
         <input
             className="note-input"
             placeholder="Title"
+            title="updatedTitle"
             value={title}
             onChange={(e) => setValues({ ...values, title: e.target.value })}
           />
@@ -42,6 +43,7 @@ function Modal(props) {
           <textarea
             className="note-input"
             value={text}
+            title="updatedText"
             placeholder="Take a note..."
             onChange={(e) => setValues({ ...values, text: e.target.value })}
           />

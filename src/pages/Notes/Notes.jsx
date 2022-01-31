@@ -25,18 +25,6 @@ function Notes() {
   };
 
   const renderNotes = () => {
-    if (term.trim() === "")
-      return shownNotes.map((note) => {
-        return (
-          <Note
-            key={note.id}
-            note={note}
-            deleteNote={deleteNote}
-            archiveNote={archiveNote}
-          />
-        );
-      });
-    else
       return shownNotes.map((note) => {
         return (
           <Note

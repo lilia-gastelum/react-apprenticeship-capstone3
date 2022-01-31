@@ -38,12 +38,14 @@ function NewNote({ addNote }) {
         <div className={`note-form ${values.color}`}>
           <input
             className="note-input"
+            title="title"
             placeholder="Title"
             onChange={(e) => setValues({ ...values, title: e.target.value })}
           />
           <br />
           <textarea
             className="note-input"
+            title="text"
             placeholder="Take a note..."
             onChange={(e) => setValues({ ...values, text: e.target.value })}
           />

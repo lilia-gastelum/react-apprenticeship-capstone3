@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Modal from "../Modal/Modal";
 import "./Note.styles.css";
 
-function Note({ note, deleteNote, archiveNote }) {
+function Note({ note, deleteNote, archiveNote, isArchived = false }) {
   const [editing, setEditing] = useState(false);
   const { title, text, color, id } = note;
 
   const closeEditing = () => setEditing(!editing);
   return (
     <>
-    <div className={`note ${color}`} onClick={closeEditing}>
+    <div title={id} className={`note ${color}`} onClick={closeEditing}>
       <h4>{title}</h4>
       <p>{text}</p>
       <div className="buttons">
@@ -20,7 +20,7 @@ function Note({ note, deleteNote, archiveNote }) {
             alt="archive"
             src="/icons/archive-black.png"
           />
-          <span className="tooltiptext">Archive</span>
+          <span className="tooltiptext">{isArchived? 'Unarchive' : 'Archive'}</span>
         </div>
         <div className="tooltip">
           <img

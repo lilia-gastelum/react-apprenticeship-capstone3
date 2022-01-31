@@ -25,6 +25,7 @@ function Login() {
         <p>Welcome</p>
         <input
           className="login-input"
+          title="email"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => {
@@ -38,6 +39,7 @@ function Login() {
           className="login-input"
           placeholder="Enter your password"
           type={"password"}
+          title="password"
           value={password}
           onChange={(e) => {
             setMessage("");

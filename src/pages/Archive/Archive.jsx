@@ -8,12 +8,19 @@ function Notes() {
     return notes
       .filter((f) => f.archived)
       .map((note) => {
-        return <Note key={note.id} note={note} deleteNote={deleteNote} />;
+        return <Note key={note.id} note={note} deleteNote={deleteNote} archiveNote={archiveNote} isArchived={true} />;
       });
   };
 
   function deleteNote(noteId) {
     const newList = notes.filter((f) => f.id !== noteId);
+    saveNotes(newList);
+  }
+
+  function archiveNote(noteId) {
+    const newList = [...notes];
+    const archived = newList.find((f) => f.id === noteId);
+    archived.archived = false;
     saveNotes(newList);
   }
 
