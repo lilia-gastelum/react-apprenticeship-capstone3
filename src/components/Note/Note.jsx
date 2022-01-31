@@ -9,7 +9,7 @@ function Note({ note, deleteNote, archiveNote }) {
   const closeEditing = () => setEditing(!editing);
   return (
     <>
-    <div className={`note ${color}`} onClick={() => {console.log('from notes'); closeEditing()}}>
+    <div className={`note ${color}`} onClick={closeEditing}>
       <h4>{title}</h4>
       <p>{text}</p>
       <div className="buttons">

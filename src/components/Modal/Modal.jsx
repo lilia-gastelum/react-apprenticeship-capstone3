@@ -18,7 +18,6 @@ function Modal(props) {
     edited.text = values.text;
     edited.color = values.color;
     saveNotes(newList);
-    console.log(newList);
     closeEditing();
   };
 
@@ -56,7 +55,7 @@ function Modal(props) {
               />
               <span className="tooltiptext-add">Background options</span>
             </div>
-            <label className="button" onClick={()=>{console.log('from modal'); closeEditing()}}>
+            <label className="button" onClick={closeEditing}>
               Cancel
             </label>
             <label className="button" onClick={editNote}>

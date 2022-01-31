@@ -15,7 +15,7 @@ function useAuth() {
 
 // eslint-disable-next-line react/prop-types
 function AuthProvider({ children }) {
-  const [authenticated, setAuthenticated] = useState(false);
+  const [authenticated, setAuthenticated] = useState(storage.get(AUTH_STORAGE_KEY) || false );
   const [user, setUser] = useState(null);
 
   const mockedUser = {

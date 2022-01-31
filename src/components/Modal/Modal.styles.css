@@ -43,6 +43,9 @@
   .gray {
     background-color: #e8eaed;
   }
+  .default {
+    background-color: #fff;
+  }
 
 
   .modal-window>div{
